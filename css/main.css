@@ -1,0 +1,22 @@
+/* Usando le CSS media queries, trasforma il repo ‘html-responsive-wannabe’ in una versione navigabile quando la larghezza dello schermo diventa < di 420px */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto',sans-serif;
+}
+@media screen and (max-width:420px) {
+  .row {
+    width: 100vw;
+  }
+  #lezioni .row>.left, #lezioni .row>.right, #steps .row>.left, #steps .row>.central, #steps .row>.right {
+    width: 100%;
+    float: none;
+    padding: 1% 10%;
+ }
+ .row img {
+   height: 50vw;
+ }
+}

@@ -1,0 +1,47 @@
+/* Usando le CSS media queries, trasforma il repo ‘html-responsive-wannabe’ in una versione navigabile quando la larghezza dello schermo diventa < di 420px */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto',sans-serif;
+}
+.row, body {
+  width: 100vw;
+}
+.row {
+  margin-top: 20px;
+}
+#steps>.row> {
+  margin: 1% 1%;
+  width: calc(94% / 3 );
+}
+h1 {
+  padding: 10px;
+}
+#why .row div {
+  margin-top: 20px !important;
+  padding: 1% 10%;
+  border-bottom: 1px solid black;
+}
+#why hr {
+  display: none;
+}
+@media screen and (max-width:768px) {
+  #lezioni .row>.left, #lezioni .row>.right, #steps .row>.left, #steps .row>.central, #steps .row>.right, #why .row>div {
+    width: 100%;
+    float: none;
+    padding: 1% 10%;
+    font-size: 1.3em;
+ }
+ .row img {
+   height: 100px;
+  }
+
+}
+@media screen and (max-width:420px) {
+  #lezioni .row>.left, #lezioni .row>.right, #steps .row>.left, #steps .row>.central, #steps .row>.right, #why .row>div {
+    font-size: 1.2em;
+ }
+}
